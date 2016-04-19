@@ -71,7 +71,6 @@
 		AD210D1F1A249D73007EB02E /* TFHppleHTMLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D1B1A249D73007EB02E /* TFHppleHTMLTest.m */; };
 		AD210D201A249D73007EB02E /* TFHppleXMLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D1C1A249D73007EB02E /* TFHppleXMLTest.m */; };
 		AD210D221A24A06D007EB02E /* TFHppleStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D211A24A06C007EB02E /* TFHppleStringTest.m */; };
-		C276581D1CC3B2630030CE59 /* MySession.m in Sources */ = {isa = PBXBuildFile; fileRef = C276581C1CC3B2630030CE59 /* MySession.m */; };
 		C27882431CC4749B008FC8BB /* HBHttpNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */; };
 /* End PBXBuildFile section */
 
@@ -189,8 +188,6 @@
 		AD210D1B1A249D73007EB02E /* TFHppleHTMLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleHTMLTest.m; sourceTree = "<group>"; };
 		AD210D1C1A249D73007EB02E /* TFHppleXMLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleXMLTest.m; sourceTree = "<group>"; };
 		AD210D211A24A06C007EB02E /* TFHppleStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleStringTest.m; sourceTree = "<group>"; };
-		C276581B1CC3B2630030CE59 /* MySession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySession.h; sourceTree = "<group>"; };
-		C276581C1CC3B2630030CE59 /* MySession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySession.m; sourceTree = "<group>"; };
 		C27882411CC4749B008FC8BB /* HBHttpNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpNetWorking.h; sourceTree = "<group>"; };
 		C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBHttpNetWorking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -492,8 +489,6 @@
 		AD210CE41A249B34007EB02E /* HppleDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C276581B1CC3B2630030CE59 /* MySession.h */,
-				C276581C1CC3B2630030CE59 /* MySession.m */,
 				C27882411CC4749B008FC8BB /* HBHttpNetWorking.h */,
 				C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */,
 				AD210CE91A249B34007EB02E /* AppDelegate.h */,
@@ -722,7 +717,6 @@
 				04D028D11CC632C50085C821 /* StudentCell.m in Sources */,
 				04D028A61CC626580085C821 /* NotificationDetailModel.m in Sources */,
 				04D0288D1CC624710085C821 /* NewsViewController.m in Sources */,
-				C276581D1CC3B2630030CE59 /* MySession.m in Sources */,
 				C27882431CC4749B008FC8BB /* HBHttpNetWorking.m in Sources */,
 				04D028361CC5C7220085C821 /* MenuViewController.m in Sources */,
 			);
