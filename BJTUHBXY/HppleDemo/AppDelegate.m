@@ -10,8 +10,10 @@
 #import "DrawerViewController.h"
 #import "HomePageViewController.h"
 #import "MenuViewController.h"
-@interface AppDelegate ()
+#import "ViewController.h"
 
+
+@interface AppDelegate ()
 @end
 
 @implementation AppDelegate
@@ -31,6 +33,9 @@
     self.window.rootViewController = rootController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    
     
     return YES;
 }

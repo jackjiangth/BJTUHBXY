@@ -14,9 +14,11 @@
 #import "EducationViewController.h"
 #import "StudentViewController.h"
 #import "HomePageViewController.h"
+
 @interface MenuViewController (){
     NSMutableArray *list;
 }
+
 
 @end
 
@@ -32,6 +34,8 @@
     [list addObject:@"新闻中心"];
     [list addObject:@"教务信息"];
     [list addObject:@"学生工作"];
+    
+    
     
 }
 
