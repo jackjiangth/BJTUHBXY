@@ -59,6 +59,16 @@
 		04D028D21CC632C50085C821 /* StudentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D028D01CC632C50085C821 /* StudentCell.xib */; };
 		04D028D51CC632F40085C821 /* StudentDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028D41CC632F40085C821 /* StudentDetailView.m */; };
 		04D028D71CC633070085C821 /* StudentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D028D61CC633070085C821 /* StudentDetailView.xib */; };
+		04D028DA1CC646C40085C821 /* EducationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028D91CC646C40085C821 /* EducationModel.m */; };
+		04D028DD1CC646D70085C821 /* EducationDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028DC1CC646D70085C821 /* EducationDetailModel.m */; };
+		04D028E11CC646F50085C821 /* EducationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028DF1CC646F50085C821 /* EducationViewController.m */; };
+		04D028E21CC646F50085C821 /* EducationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D028E01CC646F50085C821 /* EducationViewController.xib */; };
+		04D028E61CC6470A0085C821 /* EducationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028E41CC6470A0085C821 /* EducationDetailViewController.m */; };
+		04D028E71CC6470A0085C821 /* EducationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D028E51CC6470A0085C821 /* EducationDetailViewController.xib */; };
+		04D028EB1CC6472D0085C821 /* EducationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028E91CC6472D0085C821 /* EducationCell.m */; };
+		04D028EC1CC6472D0085C821 /* EducationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D028EA1CC6472D0085C821 /* EducationCell.xib */; };
+		04D028EF1CC647470085C821 /* EducationDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028EE1CC647470085C821 /* EducationDetailView.m */; };
+		04D028F11CC647520085C821 /* EducationDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D028F01CC647520085C821 /* EducationDetailView.xib */; };
 		AD210CE81A249B34007EB02E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210CE71A249B34007EB02E /* main.m */; };
 		AD210CEB1A249B34007EB02E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210CEA1A249B34007EB02E /* AppDelegate.m */; };
 		AD210CEE1A249B34007EB02E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210CED1A249B34007EB02E /* ViewController.m */; };
@@ -170,6 +180,22 @@
 		04D028D31CC632F40085C821 /* StudentDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDetailView.h; sourceTree = "<group>"; };
 		04D028D41CC632F40085C821 /* StudentDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDetailView.m; sourceTree = "<group>"; };
 		04D028D61CC633070085C821 /* StudentDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentDetailView.xib; sourceTree = "<group>"; };
+		04D028D81CC646C40085C821 /* EducationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationModel.h; sourceTree = "<group>"; };
+		04D028D91CC646C40085C821 /* EducationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationModel.m; sourceTree = "<group>"; };
+		04D028DB1CC646D70085C821 /* EducationDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationDetailModel.h; sourceTree = "<group>"; };
+		04D028DC1CC646D70085C821 /* EducationDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationDetailModel.m; sourceTree = "<group>"; };
+		04D028DE1CC646F50085C821 /* EducationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationViewController.h; sourceTree = "<group>"; };
+		04D028DF1CC646F50085C821 /* EducationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationViewController.m; sourceTree = "<group>"; };
+		04D028E01CC646F50085C821 /* EducationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationViewController.xib; sourceTree = "<group>"; };
+		04D028E31CC6470A0085C821 /* EducationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationDetailViewController.h; sourceTree = "<group>"; };
+		04D028E41CC6470A0085C821 /* EducationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationDetailViewController.m; sourceTree = "<group>"; };
+		04D028E51CC6470A0085C821 /* EducationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationDetailViewController.xib; sourceTree = "<group>"; };
+		04D028E81CC6472D0085C821 /* EducationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationCell.h; sourceTree = "<group>"; };
+		04D028E91CC6472D0085C821 /* EducationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationCell.m; sourceTree = "<group>"; };
+		04D028EA1CC6472D0085C821 /* EducationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationCell.xib; sourceTree = "<group>"; };
+		04D028ED1CC647470085C821 /* EducationDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationDetailView.h; sourceTree = "<group>"; };
+		04D028EE1CC647470085C821 /* EducationDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationDetailView.m; sourceTree = "<group>"; };
+		04D028F01CC647520085C821 /* EducationDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationDetailView.xib; sourceTree = "<group>"; };
 		AD210CE21A249B34007EB02E /* HppleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HppleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD210CE61A249B34007EB02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD210CE71A249B34007EB02E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -249,6 +275,10 @@
 		04D028391CC5CA720085C821 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				04D028D81CC646C40085C821 /* EducationModel.h */,
+				04D028D91CC646C40085C821 /* EducationModel.m */,
+				04D028DB1CC646D70085C821 /* EducationDetailModel.h */,
+				04D028DC1CC646D70085C821 /* EducationDetailModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +286,12 @@
 		04D0283A1CC5CA720085C821 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				04D028DE1CC646F50085C821 /* EducationViewController.h */,
+				04D028DF1CC646F50085C821 /* EducationViewController.m */,
+				04D028E01CC646F50085C821 /* EducationViewController.xib */,
+				04D028E31CC6470A0085C821 /* EducationDetailViewController.h */,
+				04D028E41CC6470A0085C821 /* EducationDetailViewController.m */,
+				04D028E51CC6470A0085C821 /* EducationDetailViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -263,6 +299,12 @@
 		04D0283B1CC5CA720085C821 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04D028E81CC6472D0085C821 /* EducationCell.h */,
+				04D028E91CC6472D0085C821 /* EducationCell.m */,
+				04D028EA1CC6472D0085C821 /* EducationCell.xib */,
+				04D028ED1CC647470085C821 /* EducationDetailView.h */,
+				04D028EE1CC647470085C821 /* EducationDetailView.m */,
+				04D028F01CC647520085C821 /* EducationDetailView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -649,9 +691,11 @@
 				04D0288E1CC624710085C821 /* NewsViewController.xib in Resources */,
 				04D028651CC5E3FB0085C821 /* HomePageViewController.xib in Resources */,
 				04D028791CC621D60085C821 /* HomePageView.xib in Resources */,
+				04D028E71CC6470A0085C821 /* EducationDetailViewController.xib in Resources */,
 				04D028A01CC625E60085C821 /* NewsDetailView.xib in Resources */,
 				AD210CF61A249B34007EB02E /* LaunchScreen.xib in Resources */,
 				04D028741CC5E4620085C821 /* CarouselDetailViewController.xib in Resources */,
+				04D028F11CC647520085C821 /* EducationDetailView.xib in Resources */,
 				04D028D71CC633070085C821 /* StudentDetailView.xib in Resources */,
 				04D028B51CC627C30085C821 /* NotificationCell.xib in Resources */,
 				AD210CF31A249B34007EB02E /* Images.xcassets in Resources */,
@@ -659,8 +703,10 @@
 				04D0289B1CC625AA0085C821 /* NewsCell.xib in Resources */,
 				04D0287E1CC6228E0085C821 /* CarouselDetailView.xib in Resources */,
 				04D028371CC5C7220085C821 /* MenuViewController.xib in Resources */,
+				04D028EC1CC6472D0085C821 /* EducationCell.xib in Resources */,
 				04D028CD1CC632770085C821 /* StudentDetailViewController.xib in Resources */,
 				04D028B01CC626B40085C821 /* NotificationDetailViewController.xib in Resources */,
+				04D028E21CC646F50085C821 /* EducationViewController.xib in Resources */,
 				04D0286F1CC5E4470085C821 /* CollectionDetailViewController.xib in Resources */,
 				04D028D21CC632C50085C821 /* StudentCell.xib in Resources */,
 			);
@@ -682,14 +728,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D028EB1CC6472D0085C821 /* EducationCell.m in Sources */,
 				04D028AF1CC626B40085C821 /* NotificationDetailViewController.m in Sources */,
 				04D028C01CC629130085C821 /* StudentModel.m in Sources */,
 				04D0287C1CC622800085C821 /* CarouselDetailView.m in Sources */,
 				04D028D51CC632F40085C821 /* StudentDetailView.m in Sources */,
 				04D028601CC5D2390085C821 /* CollectionDetailModel.m in Sources */,
+				04D028EF1CC647470085C821 /* EducationDetailView.m in Sources */,
 				04D028321CC5C7040085C821 /* DrawerViewController.m in Sources */,
 				04D028811CC622AD0085C821 /* CollectionDetailView.m in Sources */,
 				04D028B41CC627C30085C821 /* NotificationCell.m in Sources */,
+				04D028E61CC6470A0085C821 /* EducationDetailViewController.m in Sources */,
 				04D028951CC624A30085C821 /* NewsDetailViewController.m in Sources */,
 				04D028AA1CC626A00085C821 /* NotificationViewController.m in Sources */,
 				04D028BB1CC628240085C821 /* NotificationDetailView.m in Sources */,
@@ -711,10 +760,13 @@
 				04D028861CC623740085C821 /* NewsModel.m in Sources */,
 				AD210CEB1A249B34007EB02E /* AppDelegate.m in Sources */,
 				04D028771CC601D70085C821 /* HomePageView.m in Sources */,
+				04D028E11CC646F50085C821 /* EducationViewController.m in Sources */,
 				04D0289A1CC625AA0085C821 /* NewsCell.m in Sources */,
 				04D028731CC5E4620085C821 /* CarouselDetailViewController.m in Sources */,
 				AD210CE81A249B34007EB02E /* main.m in Sources */,
 				04D028D11CC632C50085C821 /* StudentCell.m in Sources */,
+				04D028DD1CC646D70085C821 /* EducationDetailModel.m in Sources */,
+				04D028DA1CC646C40085C821 /* EducationModel.m in Sources */,
 				04D028A61CC626580085C821 /* NotificationDetailModel.m in Sources */,
 				04D0288D1CC624710085C821 /* NewsViewController.m in Sources */,
 				C27882431CC4749B008FC8BB /* HBHttpNetWorking.m in Sources */,
