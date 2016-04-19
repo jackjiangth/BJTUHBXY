@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "DrawerViewController.h"
+#import "HomePageViewController.h"
+#import "MenuViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   //默认功能为homePage
+    HomePageViewController *HPVC = [[HomePageViewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:HPVC];
+    //创建抽屉对象
+    DrawerViewController *rootController =[[DrawerViewController alloc]initWithRootViewController:navController];
+    _drawerController = rootController;
+    //创建菜单对象
+    MenuViewController *leftController = [[MenuViewController alloc]init];
+    rootController.leftViewController = leftController;
+    //将抽屉对象设置成Windows的主视图控制器
+    self.window.rootViewController = rootController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
