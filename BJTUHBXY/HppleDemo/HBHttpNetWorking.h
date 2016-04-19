@@ -19,9 +19,9 @@
 
 
 
--(void)parseHttpContent:(NSString *)contentURLStr;
+-(void)parseHttpContent:(NSString *)contentURLStr;//获取目录页面的各个标题,和与之对应的地址.
 
--(void)parseHttpContentOfPage:(NSString *)pageURLStr;
+-(void)parseHttpContentOfPage:(NSString *)pageURLStr;//只获取该页面文章的内容,(下滑到页底,加一个button,-->阅读原文,跳转到webview里,在webview里加一个返回的button,返回到上级界面)
 
 -(void)parseHttpImgOfPage:(NSString *)pageURLStr;
 

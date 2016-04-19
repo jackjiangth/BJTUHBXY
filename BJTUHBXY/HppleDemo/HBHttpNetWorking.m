@@ -163,7 +163,7 @@
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         if ([data length] > 0 && error == nil) {
-            self.contentStr = (NSMutableString *)[self pageArticlePrase:data];
+        self.contentStr = (NSMutableString *)[self pageArticlePrase:data];
         } else if ([data length] == 0 && error == nil ){
             NSLog(@"No data was return");
         } else if (error != nil){
@@ -243,17 +243,6 @@
     NSLog(@"%@",temStr);
     return temStr;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 @end
