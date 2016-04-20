@@ -7,13 +7,13 @@
 //
 
 #import "DrawerViewController.h"
+
 #define kMenuFullWidth  [UIScreen mainScreen].bounds.size.width  //菜单的宽度
 #define kMenuDisplayedWidth 280.0f  // 菜单显示的宽度
 @interface DrawerViewController (){
     BOOL canShowLeft;   //判断左菜单是否能够显示
     BOOL showingLeftView;   //判断左菜单正在显示
 }
-
 
 @end
 
@@ -40,6 +40,9 @@
         [tap setEnabled:NO];
         _tap = tap;
     }
+    
+  
+
 }
 
 - (void)setRootViewController:(UIViewController *)rootViewController {
@@ -60,6 +63,7 @@
         }
     }
     [self setNavButtons];
+    
 }
 
 - (void)setNavButtons {
@@ -83,10 +87,13 @@
     if (canShowLeft) {
         UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(showLeft:)];
         topController.navigationItem.leftBarButtonItem = button;
-    } else {
+            } else {
         topController.navigationItem.leftBarButtonItem = nil;
     }
 }
+
+
+
 //  显示左菜单栏
 - (void)showLeft:(id)sender {
     [self showLeftController:NO];

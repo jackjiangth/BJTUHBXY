@@ -10,4 +10,6 @@
 
 @interface CarouselDetailView : UIView
 
+
+
 @end

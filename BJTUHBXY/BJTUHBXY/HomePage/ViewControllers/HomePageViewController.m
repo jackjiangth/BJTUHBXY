@@ -8,9 +8,8 @@
 
 #import "HomePageViewController.h"
 #import "SDCycleScrollView.h"
+#import "QRViewController.h"
 @interface HomePageViewController ()<SDCycleScrollViewDelegate>
-
-
 
 @end
 
@@ -18,34 +17,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor lightGrayColor];
-    self.view.backgroundColor = [UIColor colorWithRed:0.98 green:0.98 blue:0.98 alpha:0.99];
+    self.navigationController.navigationBar.backgroundColor = [UIColor orangeColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(US:)];
+
     
-    UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-    demoContainerView.contentSize = CGSizeMake(self.view.frame.size.width, 0);//Y的大小可以是任意数,不会有影响
-    [self.view addSubview:demoContainerView];
-    
-    
-    // 情景二：采用网络图片实现
-    NSArray *imagesURLStrings = @[@"http://www.bjtuhbxy.cn/edit/uploadfile/20164/2016-4-15-16-30-48.jpg",@"http://www.bjtuhbxy.cn/edit/uploadfile/20163/2016-3-28-11-4-58.jpg",@"http://www.bjtuhbxy.cn/edit/uploadfile/20163/2016-3-28-14-35-59.jpg"];
-    NSArray *titles = @[@"我院举行学生公寓消防逃生演练",@"我院2016届毕业生春季校园双选会成功举办",@"我院部署2016年重点工作"];
+    self.view.backgroundColor = [UIColor clearColor];
+    UIImageView *backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1.jpg"]];
+    backgroundView.frame = self.view.bounds;
+    [self.view addSubview:backgroundView];
+    UIScrollView *demoContentView=[[UIScrollView alloc]initWithFrame:self.view.frame];
+    demoContentView.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
+    [self.view addSubview:demoContentView];
+    self.title =@"北京交通大学海滨学院";
+    //采用网络图片展示
+    NSArray *imageURLStrings = @[@"http://www.bjtuhbxy.cn/edit/uploadfile/20164/2016-4-15-16-30-48.jpg",
+                                 @"http://www.bjtuhbxy.cn/edit/uploadfile/20163/2016-3-28-11-4-58.jpg",
+                                 @"http://www.bjtuhbxy.cn/edit/uploadfile/20163/2016-3-25-11-38-2.jpg",@"http://www.bjtuhbxy.cn/edit/uploadfile/20163/2016-3-25-11-38-24.jpg"];
+    //图片匹配的文字
+    NSArray *titles=@[@"图片一,",@"图片二",@"图片三",@"图片四"];
     CGFloat w = self.view.bounds.size.width;
-    
-#pragma mark----------
-    // 网络加载 --- 创建带标题的图片轮播器
-    SDCycleScrollView *cycleScrollView2 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, w, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
-    cycleScrollView2.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
-    cycleScrollView2.titlesGroup = titles;
-    cycleScrollView2.currentPageDotColor = [UIColor blackColor]; // 自定义分页控件小圆标颜色
-    [demoContainerView addSubview:cycleScrollView2];
-    
-    //---模拟加载延迟
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        cycleScrollView2.imageURLStringsGroup = imagesURLStrings;
+ //创建带标题的轮播图
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0,64,w,150) delegate:self placeholderImage:[UIImage imageNamed:@"1.jpg"]];
+    cycleScrollView.pageControlAliment=SDCycleScrollViewPageContolAlimentCenter;
+    cycleScrollView.titlesGroup = titles;
+    cycleScrollView.bannerImageViewContentMode = UIViewContentModeScaleToFill;
+    cycleScrollView.currentPageDotColor=[UIColor whiteColor];
+    [demoContentView addSubview:cycleScrollView];
+   //模拟延迟加载
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0001 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        cycleScrollView.imageURLStringsGroup = imageURLStrings;
     });
     
+}
 
 
+-(void)US:(id)sender{
+    QRViewController *qr = [[QRViewController alloc]init];
+    [self.navigationController pushViewController:qr animated:YES];
 }
 #pragma mark - SDCycleScrollViewDelegate
 

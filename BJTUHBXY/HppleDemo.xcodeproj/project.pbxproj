@@ -18,7 +18,6 @@
 		04D0285D1CC5D2210085C821 /* CarouselDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0285C1CC5D2210085C821 /* CarouselDetailModel.m */; };
 		04D028601CC5D2390085C821 /* CollectionDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0285F1CC5D2390085C821 /* CollectionDetailModel.m */; };
 		04D028641CC5E3FB0085C821 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028621CC5E3FB0085C821 /* HomePageViewController.m */; };
-		04D028651CC5E3FB0085C821 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D028631CC5E3FB0085C821 /* HomePageViewController.xib */; };
 		04D0286E1CC5E4470085C821 /* CollectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0286C1CC5E4470085C821 /* CollectionDetailViewController.m */; };
 		04D0286F1CC5E4470085C821 /* CollectionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D0286D1CC5E4470085C821 /* CollectionDetailViewController.xib */; };
 		04D028731CC5E4620085C821 /* CarouselDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028711CC5E4620085C821 /* CarouselDetailViewController.m */; };
@@ -84,6 +83,10 @@
 		AD210D221A24A06D007EB02E /* TFHppleStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D211A24A06C007EB02E /* TFHppleStringTest.m */; };
 		C27882431CC4749B008FC8BB /* HBHttpNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */; };
 		D670275E1CC65E44008270E6 /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D670275D1CC65E44008270E6 /* nav_menu_icon@2x.png */; };
+		D6EE46101CC7B35900CB554B /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EE460F1CC7B35900CB554B /* QRViewController.m */; };
+		D6EE46121CC7B5A500CB554B /* QR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EE46111CC7B5A500CB554B /* QR.storyboard */; };
+		D6EE46141CC7BB7800CB554B /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6EE46131CC7BB7800CB554B /* 1.jpg */; };
+		D6EE46171CC7C06200CB554B /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EE46161CC7C06200CB554B /* HomePageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +122,6 @@
 		04D0285F1CC5D2390085C821 /* CollectionDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDetailModel.m; sourceTree = "<group>"; };
 		04D028611CC5E3FB0085C821 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		04D028621CC5E3FB0085C821 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		04D028631CC5E3FB0085C821 /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		04D0286B1CC5E4470085C821 /* CollectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionDetailViewController.h; sourceTree = "<group>"; };
 		04D0286C1CC5E4470085C821 /* CollectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDetailViewController.m; sourceTree = "<group>"; };
 		04D0286D1CC5E4470085C821 /* CollectionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionDetailViewController.xib; sourceTree = "<group>"; };
@@ -222,6 +224,11 @@
 		C27882411CC4749B008FC8BB /* HBHttpNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpNetWorking.h; sourceTree = "<group>"; };
 		C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBHttpNetWorking.m; sourceTree = "<group>"; };
 		D670275D1CC65E44008270E6 /* nav_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_menu_icon@2x.png"; sourceTree = "<group>"; };
+		D6EE460E1CC7B35900CB554B /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		D6EE460F1CC7B35900CB554B /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
+		D6EE46111CC7B5A500CB554B /* QR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QR.storyboard; sourceTree = "<group>"; };
+		D6EE46131CC7BB7800CB554B /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		D6EE46161CC7C06200CB554B /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +254,7 @@
 		04D0282E1CC5C6C10085C821 /* BJTUHBXY */ = {
 			isa = PBXGroup;
 			children = (
+				D6EE460D1CC7B31000CB554B /* QRcode */,
 				04D028381CC5CA720085C821 /* Education */,
 				04D0283C1CC5CA720085C821 /* HomePage */,
 				04D028461CC5CA720085C821 /* News */,
@@ -346,7 +354,7 @@
 			children = (
 				04D028611CC5E3FB0085C821 /* HomePageViewController.h */,
 				04D028621CC5E3FB0085C821 /* HomePageViewController.m */,
-				04D028631CC5E3FB0085C821 /* HomePageViewController.xib */,
+				D6EE46161CC7C06200CB554B /* HomePageViewController.xib */,
 				04D028701CC5E4620085C821 /* CarouselDetailViewController.h */,
 				04D028711CC5E4620085C821 /* CarouselDetailViewController.m */,
 				04D028721CC5E4620085C821 /* CarouselDetailViewController.xib */,
@@ -555,6 +563,7 @@
 				AD210CEC1A249B34007EB02E /* ViewController.h */,
 				AD210CED1A249B34007EB02E /* ViewController.m */,
 				AD210CEF1A249B34007EB02E /* Main.storyboard */,
+				D6EE46131CC7BB7800CB554B /* 1.jpg */,
 				AD210CF21A249B34007EB02E /* Images.xcassets */,
 				AD210CF41A249B34007EB02E /* LaunchScreen.xib */,
 				AD210CE51A249B34007EB02E /* Supporting Files */,
@@ -621,6 +630,16 @@
 				AD210D1A1A249D73007EB02E /* index.html */,
 			);
 			path = TestData;
+			sourceTree = "<group>";
+		};
+		D6EE460D1CC7B31000CB554B /* QRcode */ = {
+			isa = PBXGroup;
+			children = (
+				D6EE460E1CC7B35900CB554B /* QRViewController.h */,
+				D6EE460F1CC7B35900CB554B /* QRViewController.m */,
+				D6EE46111CC7B5A500CB554B /* QR.storyboard */,
+			);
+			name = QRcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -711,13 +730,14 @@
 				04D028831CC622BB0085C821 /* CollectionDetailView.xib in Resources */,
 				04D028C81CC632670085C821 /* StudentViewController.xib in Resources */,
 				04D0288E1CC624710085C821 /* NewsViewController.xib in Resources */,
-				04D028651CC5E3FB0085C821 /* HomePageViewController.xib in Resources */,
 				04D028791CC621D60085C821 /* HomePageView.xib in Resources */,
 				04D028E71CC6470A0085C821 /* EducationDetailViewController.xib in Resources */,
 				04D028A01CC625E60085C821 /* NewsDetailView.xib in Resources */,
 				AD210CF61A249B34007EB02E /* LaunchScreen.xib in Resources */,
 				04D028741CC5E4620085C821 /* CarouselDetailViewController.xib in Resources */,
+				D6EE46141CC7BB7800CB554B /* 1.jpg in Resources */,
 				D670275E1CC65E44008270E6 /* nav_menu_icon@2x.png in Resources */,
+				D6EE46171CC7C06200CB554B /* HomePageViewController.xib in Resources */,
 				04D028F11CC647520085C821 /* EducationDetailView.xib in Resources */,
 				04D028D71CC633070085C821 /* StudentDetailView.xib in Resources */,
 				04D028B51CC627C30085C821 /* NotificationCell.xib in Resources */,
@@ -732,6 +752,7 @@
 				04D028E21CC646F50085C821 /* EducationViewController.xib in Resources */,
 				04D0286F1CC5E4470085C821 /* CollectionDetailViewController.xib in Resources */,
 				04D028D21CC632C50085C821 /* StudentCell.xib in Resources */,
+				D6EE46121CC7B5A500CB554B /* QR.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +851,7 @@
 				04D0282B1CC5C54F0085C821 /* TFHpple.m in Sources */,
 				04D028861CC623740085C821 /* NewsModel.m in Sources */,
 				AD210CEB1A249B34007EB02E /* AppDelegate.m in Sources */,
+				D6EE46101CC7B35900CB554B /* QRViewController.m in Sources */,
 				04D028771CC601D70085C821 /* HomePageView.m in Sources */,
 				04D028E11CC646F50085C821 /* EducationViewController.m in Sources */,
 				04D0289A1CC625AA0085C821 /* NewsCell.m in Sources */,
