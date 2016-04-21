@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor clearColor];
     //创建过滤器,生成二维码
     CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     //恢复默认设置
@@ -31,7 +31,8 @@
     CIImage *outputImg= [filter outputImage];
     //显示二维码
     self.imageView.image = [UIImage imageWithCIImage:outputImg];
-
+   
+    
     
 }
 

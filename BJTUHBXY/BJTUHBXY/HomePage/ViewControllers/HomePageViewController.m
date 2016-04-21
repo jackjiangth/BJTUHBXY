@@ -9,6 +9,7 @@
 #import "HomePageViewController.h"
 #import "SDCycleScrollView.h"
 #import "QRViewController.h"
+#import "DetailTableViewController.h"
 @interface HomePageViewController ()<SDCycleScrollViewDelegate>
 
 @end
@@ -22,9 +23,9 @@
 
     
     self.view.backgroundColor = [UIColor clearColor];
-    UIImageView *backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1.jpg"]];
-    backgroundView.frame = self.view.bounds;
-    [self.view addSubview:backgroundView];
+//    UIImageView *backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1.jpg"]];
+//    backgroundView.frame = self.view.bounds;
+//    [self.view addSubview:backgroundView];
     UIScrollView *demoContentView=[[UIScrollView alloc]initWithFrame:self.view.frame];
     demoContentView.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:demoContentView];
@@ -52,17 +53,27 @@
 
 
 -(void)US:(id)sender{
+    
     QRViewController *qr = [[QRViewController alloc]init];
     [self.navigationController pushViewController:qr animated:YES];
+   
 }
 #pragma mark - SDCycleScrollViewDelegate
 
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     NSLog(@"---点击了第%ld张图片", (long)index);
+    DetailTableViewController *detail = [[DetailTableViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:detail];
     
-    [self.navigationController pushViewController:[NSClassFromString(@"DemoVCWithXib") new] animated:YES];
-}
+    detail.index = index;
+    [self.view.window.rootViewController presentViewController:nav animated:YES completion:^{
+    
+    }];
+     
+     
+     
+     }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

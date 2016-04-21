@@ -82,6 +82,8 @@
 		AD210D201A249D73007EB02E /* TFHppleXMLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D1C1A249D73007EB02E /* TFHppleXMLTest.m */; };
 		AD210D221A24A06D007EB02E /* TFHppleStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D211A24A06C007EB02E /* TFHppleStringTest.m */; };
 		C27882431CC4749B008FC8BB /* HBHttpNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */; };
+		D646E12A1CC882AA001BF6D7 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D646E1291CC882AA001BF6D7 /* DetailTableViewController.m */; };
+		D646E12C1CC88593001BF6D7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D646E12B1CC88593001BF6D7 /* Storyboard.storyboard */; };
 		D670275E1CC65E44008270E6 /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D670275D1CC65E44008270E6 /* nav_menu_icon@2x.png */; };
 		D6EE46101CC7B35900CB554B /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EE460F1CC7B35900CB554B /* QRViewController.m */; };
 		D6EE46121CC7B5A500CB554B /* QR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EE46111CC7B5A500CB554B /* QR.storyboard */; };
@@ -125,9 +127,9 @@
 		04D0286B1CC5E4470085C821 /* CollectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionDetailViewController.h; sourceTree = "<group>"; };
 		04D0286C1CC5E4470085C821 /* CollectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDetailViewController.m; sourceTree = "<group>"; };
 		04D0286D1CC5E4470085C821 /* CollectionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionDetailViewController.xib; sourceTree = "<group>"; };
-		04D028701CC5E4620085C821 /* CarouselDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselDetailViewController.h; sourceTree = "<group>"; };
-		04D028711CC5E4620085C821 /* CarouselDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselDetailViewController.m; sourceTree = "<group>"; };
-		04D028721CC5E4620085C821 /* CarouselDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselDetailViewController.xib; sourceTree = "<group>"; };
+		04D028701CC5E4620085C821 /* CarouselDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarouselDetailViewController.h; path = BJTUHBXY/HomePage/ViewControllers/CarouselDetailViewController.h; sourceTree = "<group>"; };
+		04D028711CC5E4620085C821 /* CarouselDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarouselDetailViewController.m; path = BJTUHBXY/HomePage/ViewControllers/CarouselDetailViewController.m; sourceTree = "<group>"; };
+		04D028721CC5E4620085C821 /* CarouselDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CarouselDetailViewController.xib; path = BJTUHBXY/HomePage/ViewControllers/CarouselDetailViewController.xib; sourceTree = "<group>"; };
 		04D028751CC601D70085C821 /* HomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageView.h; sourceTree = "<group>"; };
 		04D028761CC601D70085C821 /* HomePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageView.m; sourceTree = "<group>"; };
 		04D028781CC621D60085C821 /* HomePageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageView.xib; sourceTree = "<group>"; };
@@ -223,6 +225,9 @@
 		AD210D211A24A06C007EB02E /* TFHppleStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleStringTest.m; sourceTree = "<group>"; };
 		C27882411CC4749B008FC8BB /* HBHttpNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpNetWorking.h; sourceTree = "<group>"; };
 		C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBHttpNetWorking.m; sourceTree = "<group>"; };
+		D646E1281CC882AA001BF6D7 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		D646E1291CC882AA001BF6D7 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		D646E12B1CC88593001BF6D7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		D670275D1CC65E44008270E6 /* nav_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_menu_icon@2x.png"; sourceTree = "<group>"; };
 		D6EE460E1CC7B35900CB554B /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		D6EE460F1CC7B35900CB554B /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
@@ -355,9 +360,9 @@
 				04D028611CC5E3FB0085C821 /* HomePageViewController.h */,
 				04D028621CC5E3FB0085C821 /* HomePageViewController.m */,
 				D6EE46161CC7C06200CB554B /* HomePageViewController.xib */,
-				04D028701CC5E4620085C821 /* CarouselDetailViewController.h */,
-				04D028711CC5E4620085C821 /* CarouselDetailViewController.m */,
-				04D028721CC5E4620085C821 /* CarouselDetailViewController.xib */,
+				D646E1281CC882AA001BF6D7 /* DetailTableViewController.h */,
+				D646E1291CC882AA001BF6D7 /* DetailTableViewController.m */,
+				D646E12B1CC88593001BF6D7 /* Storyboard.storyboard */,
 				04D0286B1CC5E4470085C821 /* CollectionDetailViewController.h */,
 				04D0286C1CC5E4470085C821 /* CollectionDetailViewController.m */,
 				04D0286D1CC5E4470085C821 /* CollectionDetailViewController.xib */,
@@ -539,6 +544,9 @@
 				AD210CE41A249B34007EB02E /* HppleDemo */,
 				AD210CFE1A249B34007EB02E /* HppleDemoTests */,
 				AD210CE31A249B34007EB02E /* Products */,
+				04D028701CC5E4620085C821 /* CarouselDetailViewController.h */,
+				04D028711CC5E4620085C821 /* CarouselDetailViewController.m */,
+				04D028721CC5E4620085C821 /* CarouselDetailViewController.xib */,
 				AD210D171A249C7A007EB02E /* Frameworks */,
 				506CA7682C938DBDFF19B1CC /* Pods */,
 			);
@@ -753,6 +761,7 @@
 				04D0286F1CC5E4470085C821 /* CollectionDetailViewController.xib in Resources */,
 				04D028D21CC632C50085C821 /* StudentCell.xib in Resources */,
 				D6EE46121CC7B5A500CB554B /* QR.storyboard in Resources */,
+				D646E12C1CC88593001BF6D7 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +859,7 @@
 				04D0289E1CC625DA0085C821 /* NewsDetailView.m in Sources */,
 				04D0282B1CC5C54F0085C821 /* TFHpple.m in Sources */,
 				04D028861CC623740085C821 /* NewsModel.m in Sources */,
+				D646E12A1CC882AA001BF6D7 /* DetailTableViewController.m in Sources */,
 				AD210CEB1A249B34007EB02E /* AppDelegate.m in Sources */,
 				D6EE46101CC7B35900CB554B /* QRViewController.m in Sources */,
 				04D028771CC601D70085C821 /* HomePageView.m in Sources */,
