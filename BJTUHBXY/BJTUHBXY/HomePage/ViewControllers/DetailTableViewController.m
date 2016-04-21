@@ -7,7 +7,7 @@
 //
 
 #import "DetailTableViewController.h"
-
+#import "HomePageViewController.h"
 @interface DetailTableViewController ()
 
 @end
@@ -16,13 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(Back:)];
     
     switch (self.index) {
         case 0:
             self.view.backgroundColor = [UIColor redColor];
-            
+   
             break;
         case 1:
             self.view.backgroundColor = [UIColor orangeColor];

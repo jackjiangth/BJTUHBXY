@@ -38,7 +38,7 @@
     NSArray *titles=@[@"图片一,",@"图片二",@"图片三",@"图片四"];
     CGFloat w = self.view.bounds.size.width;
  //创建带标题的轮播图
-    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0,64,w,150) delegate:self placeholderImage:[UIImage imageNamed:@"1.jpg"]];
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0,44,w,150) delegate:self placeholderImage:[UIImage imageNamed:@"1.jpg"]];
     cycleScrollView.pageControlAliment=SDCycleScrollViewPageContolAlimentCenter;
     cycleScrollView.titlesGroup = titles;
     cycleScrollView.bannerImageViewContentMode = UIViewContentModeScaleToFill;
