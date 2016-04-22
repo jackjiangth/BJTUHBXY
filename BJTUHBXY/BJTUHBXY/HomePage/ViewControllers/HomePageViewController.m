@@ -8,8 +8,12 @@
 
 #import "HomePageViewController.h"
 #import "SDCycleScrollView.h"
-@interface HomePageViewController ()<SDCycleScrollViewDelegate>
 
+#define CollectionViewCellID @"CollectionViewCell"
+
+@interface HomePageViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
+
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 
 @end
@@ -44,9 +48,52 @@
         cycleScrollView2.imageURLStringsGroup = imagesURLStrings;
     });
     
-
+    
+    [self createCollectionView];
 
 }
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellID forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor greenColor];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 80, 40)];
+    label.center = CGPointMake(cell.bounds.size.width / 2, cell.bounds.size.height / 2);
+    label.backgroundColor = [UIColor magentaColor];
+    [cell addSubview:label];
+    return cell;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 9;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+// 创建collectionview
+- (void)createCollectionView {
+    
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.minimumLineSpacing = 2;
+    layout.minimumInteritemSpacing = 2;
+    layout.itemSize = CGSizeMake(self.view.bounds.size.width/3 - 10 , self.view.bounds.size.width/3 );
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 164 + 64, self.view.bounds.size.width, self.view.bounds.size.height-164) collectionViewLayout:layout];
+    self.collectionView.backgroundColor = [UIColor redColor];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CollectionViewCellID];
+    
+    [self.view addSubview:self.collectionView];
+}
+
+// 点击collectionview的cell跳转页面
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
 #pragma mark - SDCycleScrollViewDelegate
 
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
