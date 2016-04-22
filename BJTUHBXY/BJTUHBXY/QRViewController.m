@@ -34,7 +34,7 @@
 
 -(void)show:(id)sender{
     
-    self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(300, 300, 300, 300)];
+    self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(200,100,100,100)];
     [self.view addSubview:self.imageView];
  
  
