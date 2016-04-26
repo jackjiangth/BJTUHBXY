@@ -14,8 +14,6 @@
 
 
 @interface AppDelegate ()
-@property(nonatomic,strong)UIImageView *splashView;
-
 @end
 
 @implementation AppDelegate
@@ -36,32 +34,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-  //设置一个图片
-    UIImageView *niceView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
-    niceView.image = [UIImage imageNamed:@"hbxy.png"];
-    //添加到场景
-    [self.window addSubview:niceView];
-    //放到最顶层
-    [self.window bringSubviewToFront:niceView];
-    //开始设置动画
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:3.0];
-    [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.window cache:YES];
-    [UIView setAnimationDelegate:self];
- //   [UIView setAnimationDidStopSelector:@selector(startupAnimationDone:finished:context:)];
-    niceView.alpha = 0.0;
-    niceView.frame = CGRectMake(-60, 85, 440, 635);
-    [UIView commitAnimations];
-    
     
     
     
     return YES;
 }
-
-
-
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

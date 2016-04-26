@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045DAD461CCE35C40093237C /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045DAD411CCE35C40093237C /* arrow@2x.png */; };
+		045DAD471CCE35C40093237C /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 045DAD421CCE35C40093237C /* demo.gif */; };
+		045DAD481CCE35C40093237C /* LORefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DAD441CCE35C40093237C /* LORefresh.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		045DAD491CCE35C40093237C /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 045DAD451CCE35C40093237C /* test.gif */; };
+		047F1BC81CCD026C00075B36 /* HBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1BC71CCD026C00075B36 /* HBPageViewController.m */; };
 		04D0282B1CC5C54F0085C821 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028261CC5C54F0085C821 /* TFHpple.m */; };
 		04D0282C1CC5C54F0085C821 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D028281CC5C54F0085C821 /* TFHppleElement.m */; };
 		04D0282D1CC5C54F0085C821 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0282A1CC5C54F0085C821 /* XPathQuery.m */; };
@@ -85,6 +90,7 @@
 		D60DD8481CCEFC230020F95B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D60DD8471CCEFC230020F95B /* icon.png */; };
 		D60DD84A1CCEFE6B0020F95B /* hbxy.png in Resources */ = {isa = PBXBuildFile; fileRef = D60DD8491CCEFE6B0020F95B /* hbxy.png */; };
 		D60DD84C1CCF07A10020F95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60DD84B1CCF07A10020F95B /* Main.storyboard */; };
+ b0bf350272af444ba74d99ed08298851ea342dde
 		D646E12A1CC882AA001BF6D7 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D646E1291CC882AA001BF6D7 /* DetailTableViewController.m */; };
 		D646E12C1CC88593001BF6D7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D646E12B1CC88593001BF6D7 /* Storyboard.storyboard */; };
 		D670275E1CC65E44008270E6 /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D670275D1CC65E44008270E6 /* nav_menu_icon@2x.png */; };
@@ -106,6 +112,13 @@
 
 /* Begin PBXFileReference section */
 		00520B30593914E86BAC0072 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		045DAD411CCE35C40093237C /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		045DAD421CCE35C40093237C /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		045DAD431CCE35C40093237C /* LORefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LORefresh.h; sourceTree = "<group>"; };
+		045DAD441CCE35C40093237C /* LORefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LORefresh.m; sourceTree = "<group>"; };
+		045DAD451CCE35C40093237C /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		047F1BC61CCD026C00075B36 /* HBPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBPageViewController.h; sourceTree = "<group>"; };
+		047F1BC71CCD026C00075B36 /* HBPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBPageViewController.m; sourceTree = "<group>"; };
 		04D028251CC5C54F0085C821 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = Hpple/TFHpple.h; sourceTree = "<group>"; };
 		04D028261CC5C54F0085C821 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = Hpple/TFHpple.m; sourceTree = "<group>"; };
 		04D028271CC5C54F0085C821 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = Hpple/TFHppleElement.h; sourceTree = "<group>"; };
@@ -227,10 +240,13 @@
 		AD210D211A24A06C007EB02E /* TFHppleStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleStringTest.m; sourceTree = "<group>"; };
 		C27882411CC4749B008FC8BB /* HBHttpNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpNetWorking.h; sourceTree = "<group>"; };
 		C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBHttpNetWorking.m; sourceTree = "<group>"; };
+
 		D60DD8451CCEFB0F0020F95B /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
 		D60DD8471CCEFC230020F95B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		D60DD8491CCEFE6B0020F95B /* hbxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hbxy.png; sourceTree = "<group>"; };
 		D60DD84B1CCF07A10020F95B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+
+b0bf350272af444ba74d99ed08298851ea342dde
 		D646E1281CC882AA001BF6D7 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
 		D646E1291CC882AA001BF6D7 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		D646E12B1CC88593001BF6D7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -262,9 +278,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045DAD401CCE35C40093237C /* newLORefresh */ = {
+			isa = PBXGroup;
+			children = (
+				045DAD411CCE35C40093237C /* arrow@2x.png */,
+				045DAD421CCE35C40093237C /* demo.gif */,
+				045DAD431CCE35C40093237C /* LORefresh.h */,
+				045DAD441CCE35C40093237C /* LORefresh.m */,
+				045DAD451CCE35C40093237C /* test.gif */,
+			);
+			path = newLORefresh;
+			sourceTree = "<group>";
+		};
 		04D0282E1CC5C6C10085C821 /* BJTUHBXY */ = {
 			isa = PBXGroup;
 			children = (
+				045DAD401CCE35C40093237C /* newLORefresh */,
 				D6EE460D1CC7B31000CB554B /* QRcode */,
 				04D028381CC5CA720085C821 /* Education */,
 				04D0283C1CC5CA720085C821 /* HomePage */,
@@ -570,6 +599,8 @@
 		AD210CE41A249B34007EB02E /* HppleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				047F1BC61CCD026C00075B36 /* HBPageViewController.h */,
+				047F1BC71CCD026C00075B36 /* HBPageViewController.m */,
 				C27882411CC4749B008FC8BB /* HBHttpNetWorking.h */,
 				C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */,
 				AD210CE91A249B34007EB02E /* AppDelegate.h */,
@@ -578,9 +609,9 @@
 				AD210CED1A249B34007EB02E /* ViewController.m */,
 				D60DD84B1CCF07A10020F95B /* Main.storyboard */,
 				D60DD8491CCEFE6B0020F95B /* hbxy.png */,
+				AD210CEF1A249B34007EB02E /* Main.storyboard */,
+b0bf350272af444ba74d99ed08298851ea342dde
 				D6EE46131CC7BB7800CB554B /* 1.jpg */,
-				D60DD8451CCEFB0F0020F95B /* splash.jpg */,
-				D60DD8471CCEFC230020F95B /* icon.png */,
 				AD210CF21A249B34007EB02E /* Images.xcassets */,
 				AD210CF41A249B34007EB02E /* LaunchScreen.xib */,
 				AD210CE51A249B34007EB02E /* Supporting Files */,
@@ -710,6 +741,7 @@
 				TargetAttributes = {
 					AD210CE11A249B34007EB02E = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8743EE49D6;
 					};
 					AD210CFA1A249B34007EB02E = {
 						CreatedOnToolsVersion = 6.1;
@@ -745,20 +777,25 @@
 				04D028961CC624A30085C821 /* NewsDetailViewController.xib in Resources */,
 				D60DD8461CCEFB0F0020F95B /* splash.jpg in Resources */,
 				D60DD8481CCEFC230020F95B /* icon.png in Resources */,
+				AD210CF11A249B34007EB02E /* Main.storyboard in Resources */,
+
+b0bf350272af444ba74d99ed08298851ea342dde
 				04D028831CC622BB0085C821 /* CollectionDetailView.xib in Resources */,
 				04D028C81CC632670085C821 /* StudentViewController.xib in Resources */,
 				04D0288E1CC624710085C821 /* NewsViewController.xib in Resources */,
 				04D028791CC621D60085C821 /* HomePageView.xib in Resources */,
 				04D028E71CC6470A0085C821 /* EducationDetailViewController.xib in Resources */,
 				04D028A01CC625E60085C821 /* NewsDetailView.xib in Resources */,
+				045DAD461CCE35C40093237C /* arrow@2x.png in Resources */,
+				045DAD491CCE35C40093237C /* test.gif in Resources */,
 				AD210CF61A249B34007EB02E /* LaunchScreen.xib in Resources */,
 				04D028741CC5E4620085C821 /* CarouselDetailViewController.xib in Resources */,
 				D6EE46141CC7BB7800CB554B /* 1.jpg in Resources */,
 				D670275E1CC65E44008270E6 /* nav_menu_icon@2x.png in Resources */,
 				D6EE46171CC7C06200CB554B /* HomePageViewController.xib in Resources */,
 				04D028F11CC647520085C821 /* EducationDetailView.xib in Resources */,
-				D60DD84A1CCEFE6B0020F95B /* hbxy.png in Resources */,
 				04D028D71CC633070085C821 /* StudentDetailView.xib in Resources */,
+				045DAD471CCE35C40093237C /* demo.gif in Resources */,
 				04D028B51CC627C30085C821 /* NotificationCell.xib in Resources */,
 				AD210CF31A249B34007EB02E /* Images.xcassets in Resources */,
 				04D028BD1CC628310085C821 /* NotificationDetailView.xib in Resources */,
@@ -864,10 +901,12 @@
 				04D0285A1CC5CE710085C821 /* HomePageCollectionModel.m in Sources */,
 				04D028CC1CC632770085C821 /* StudentDetailViewController.m in Sources */,
 				04D028891CC623950085C821 /* NewsDetailModel.m in Sources */,
+				045DAD481CCE35C40093237C /* LORefresh.m in Sources */,
 				04D0282D1CC5C54F0085C821 /* XPathQuery.m in Sources */,
 				04D028C71CC632670085C821 /* StudentViewController.m in Sources */,
 				04D0285D1CC5D2210085C821 /* CarouselDetailModel.m in Sources */,
 				04D0282C1CC5C54F0085C821 /* TFHppleElement.m in Sources */,
+				047F1BC81CCD026C00075B36 /* HBPageViewController.m in Sources */,
 				04D0289E1CC625DA0085C821 /* NewsDetailView.m in Sources */,
 				04D0282B1CC5C54F0085C821 /* TFHpple.m in Sources */,
 				04D028861CC623740085C821 /* NewsModel.m in Sources */,
@@ -1002,6 +1041,8 @@
 			baseConfigurationReference = 00520B30593914E86BAC0072 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -1009,7 +1050,9 @@
 				);
 				INFOPLIST_FILE = HppleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hpple.HppleDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1018,6 +1061,8 @@
 			baseConfigurationReference = 3409B68370D0512467C3F803 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -1025,7 +1070,9 @@
 				);
 				INFOPLIST_FILE = HppleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hpple.HppleDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

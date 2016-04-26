@@ -7,22 +7,63 @@
 //
 
 #import <Foundation/Foundation.h>
+// 声明代理
+@protocol receiveDataFromHBDelegate <NSObject>
+@optional
+// ****************************************************
+// 用这个方法可以获取网络请求完的标题
+-(void)receiveTitleFromContent:(NSMutableArray *)titleArr;
+// ****************************************************
+
+
+// ****************************************************
+// 用这个方法可以获取网络请求完的与标题对应的url
+-(void)receiveUrlFromContent:(NSMutableArray *)urlArr;
+// ****************************************************
+
+// http://www.lanou3g.com/bbs/forum.php?mod=viewthread&tid=5189
+
+// ****************************************************
+// 不建议自己调用
+// 用这个方法可以获取Content的HTML
+// 给封装后的HBSecondPageView用的
+// 使用时应使用HBSecondPageView类
+-(void)receiveHTMLFromArticle:(NSMutableString *)articleStr baseURL:(NSURL *)url;
+// ****************************************************
+@end
+
 
 @interface HBHttpNetWorking : NSObject
-// 存储的·目录·标签
-@property(nonatomic,strong)NSMutableArray *contentTitles;
-@property(nonatomic,strong)NSMutableArray *contentURLs;
-
-@property(nonatomic,strong)NSMutableString *contentStr;
-
-@property(nonatomic,strong)NSMutableArray *imgURLArr;
+// ****************************************************
+// 协议的代理
+@property(nonatomic,assign)id<receiveDataFromHBDelegate> delegate;
+// ****************************************************
 
 
+// ****************************************************
+// 不建议直接调用
+// 这个只是用来存值的
+// 使用时应使用代理的方法
+@property(nonatomic,strong)NSMutableArray *arrFromContentTitles;
+@property(nonatomic,strong)NSMutableArray *arrFromContentUrls;
+@property(nonatomic,strong)NSMutableString *strOfHTMLFromArticle;
+// ****************************************************
 
--(void)parseHttpContent:(NSString *)contentURLStr;//获取目录页面的各个标题,和与之对应的地址.
 
--(void)parseHttpContentOfPage:(NSString *)pageURLStr;//只获取该页面文章的内容,(下滑到页底,加一个button,-->阅读原文,跳转到webview里,在webview里加一个返回的button,返回到上级界面)
 
--(void)parseHttpImgOfPage:(NSString *)pageURLStr;
+// ****************************************************
+// 获取目录页面里的标题和与之对应的Url
+-(void)parseTitleAndUrlFromHttpContentPage:(NSString *)contentURLStr;
+// ****************************************************
+
+
+
+// ****************************************************
+// 不建议自己调用
+// 这个方法是给封装后的HBSecondPageView的
+// 使用时应使用HBSecondPageView类
+-(void)parseContentFromHttpArticle:(NSString *)pageUrlStr;
+// ****************************************************
+
 
 @end

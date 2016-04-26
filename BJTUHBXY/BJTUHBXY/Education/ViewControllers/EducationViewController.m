@@ -8,15 +8,83 @@
 
 #import "EducationViewController.h"
 
-@interface EducationViewController ()
+#import "HBHttpNetWorking.h"
+
+#import "EducationDetailViewController.h"
+#import "HBPageViewController.h"
+
+@interface EducationViewController () <UITableViewDelegate,UITableViewDataSource,receiveDataFromHBDelegate>
+
+@property (nonatomic, strong) NSArray *array;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *contentArray;
 
 @end
 
 @implementation EducationViewController
 
+- (void)loadView {
+    self.tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.view = self.tableView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
+
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    HBHttpNetWorking *hbNetWorking = [[HBHttpNetWorking alloc] init];
+    [hbNetWorking parseTitleAndUrlFromHttpContentPage:@"http://www.bjtuhbxy.cn/news_more.asp?lm2=91"];
+    
+    hbNetWorking.delegate = self;
+    
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"myCell"];
+    
+    
+    
+    
+    
+}
+
+- (void)receiveTitleFromContent:(NSMutableArray *)titleArr {
+    
+    self.array = titleArr;
+    [self.tableView reloadData];
+}
+
+- (void)receiveUrlFromContent:(NSMutableArray *)urlArr {
+    self.contentArray = urlArr;
+    
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
+    cell.textLabel.text = self.array[indexPath.row];
+    return cell;
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.array.count;
+}
+
+
+static HBPageViewController *hbPageViewController = nil;
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (hbPageViewController == nil) {
+        hbPageViewController = [[HBPageViewController alloc] initWithHttpOfUrl:self.contentArray[indexPath.row]];
+    } else {
+        [hbPageViewController updateHBPage:self.contentArray[indexPath.row]];
+    }
+    
+    [self.navigationController pushViewController:hbPageViewController animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

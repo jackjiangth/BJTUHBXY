@@ -7,8 +7,11 @@
 //
 
 #import "EducationDetailViewController.h"
+#import "HBHttpNetWorking.h"
 
 @interface EducationDetailViewController ()
+
+
 
 @end
 
@@ -17,7 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+        
 }
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
