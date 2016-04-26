@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HBHttpNetWorking.h"
+
 
 @interface ViewController ()
 
@@ -21,24 +21,15 @@
     
 
     
-    // 目录页
-    //[session myGetSession:@"http://www.bjtuhbxy.cn/news_more.asp?lm2=74"];
+
     
-    HBHttpNetWorking *hbNet = [[HBHttpNetWorking alloc] init];
-    //[hbNet parseHttpContent:@"http://www.bjtuhbxy.cn/news_more.asp?lm2=74"];
-    
-    //NSLog(@"%@",hbNet.contentTitles);
-    
-    //[hbNet parseHttpContentOfPage:@"http://www.bjtuhbxy.cn/News_View.asp?NewsID=1967"];
-    
-    [hbNet parseHttpContentOfPage:@"http://www.bjtuhbxy.cn/News_View.asp?NewsID=1967"];
-    
-    
-    
-    
- 
+//    HBHttpNetWorking *hbNet = [[HBHttpNetWorking alloc] init];
+//
+//    
+//    [hbNet parseContentFromHttpArticle:@"http://www.bjtuhbxy.cn/News_View.asp?NewsID=1954"];
 
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

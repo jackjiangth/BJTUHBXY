@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HomePageViewController.h"
 @interface CollectionDetailViewController : UIViewController
+
+@property(nonatomic,assign)NSInteger follow;
 
 @end

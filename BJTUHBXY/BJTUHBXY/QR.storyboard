@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Iln-XX-4LV">
+            <objects>
+                <viewController id="1ex-OO-88a" customClass="QRViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7dz-os-fKQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="dLh-ig-JDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rc7-a0-g9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f5Q-4w-ZBd">
+                                <rect key="frame" x="81" y="213" width="159" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="P7r-be-2ld"/>
+                                    <constraint firstAttribute="width" constant="159" id="tt5-Za-G7I"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f5Q-4w-ZBd" firstAttribute="centerY" secondItem="Rc7-a0-g9Q" secondAttribute="centerY" id="c7l-ZM-eR7"/>
+                            <constraint firstItem="f5Q-4w-ZBd" firstAttribute="centerX" secondItem="Rc7-a0-g9Q" secondAttribute="centerX" id="uUk-h3-MaT"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="f5Q-4w-ZBd" id="ddJ-yu-dfi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVr-8k-OdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="417"/>
+        </scene>
+    </scenes>
+</document>

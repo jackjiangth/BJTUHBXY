@@ -1,23 +1,31 @@
 //
-//  NewsViewController.m
+//  EducationDetailViewController.m
 //  HppleDemo
 //
 //  Created by jack on 16/4/19.
 //
 //
 
-#import "NewsViewController.h"
+#import "EducationDetailViewController.h"
+#import "HBHttpNetWorking.h"
 
-@interface NewsViewController ()
+@interface EducationDetailViewController ()
+
+
 
 @end
 
-@implementation NewsViewController
+@implementation EducationDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
+    // Do any additional setup after loading the view from its nib.
+        
 }
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
