@@ -73,15 +73,20 @@
 }
 
 
-static HBPageViewController *hbPageViewController = nil;
 
 
+static HBPageViewController *hbPageViewController;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (hbPageViewController == nil) {
         hbPageViewController = [[HBPageViewController alloc] initWithHttpOfUrl:self.contentArray[indexPath.row]];
-    } else {
+    }else{
         [hbPageViewController updateHBPage:self.contentArray[indexPath.row]];
     }
+    
+    
+    
+    NSLog(@"%@",self.contentArray[indexPath.row]);
+
     
     [self.navigationController pushViewController:hbPageViewController animated:YES];
     

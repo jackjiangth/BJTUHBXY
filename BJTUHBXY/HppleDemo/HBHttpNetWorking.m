@@ -170,7 +170,7 @@
 
 #pragma mark -- 补全url
 -(NSString *)complementedHBURL:(NSString *)str{
-    return [NSString stringWithFormat:@"http://www.bjtuhbxy.cn%@",str];
+    return [NSString stringWithFormat:@"http://www.bjtuhbxy.cn/%@",str];
 }
 
 

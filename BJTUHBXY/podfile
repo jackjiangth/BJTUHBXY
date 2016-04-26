@@ -1,0 +1,6 @@
+     pod 'SDCycleScrollView', '~> 1.62'
+
+
+   pod 'AFNetworking', '~> 3.1.0'
+
+
