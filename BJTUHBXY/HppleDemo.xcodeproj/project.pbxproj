@@ -82,6 +82,9 @@
 		AD210D201A249D73007EB02E /* TFHppleXMLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D1C1A249D73007EB02E /* TFHppleXMLTest.m */; };
 		AD210D221A24A06D007EB02E /* TFHppleStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD210D211A24A06C007EB02E /* TFHppleStringTest.m */; };
 		C27882431CC4749B008FC8BB /* HBHttpNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */; };
+		D60DD8461CCEFB0F0020F95B /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60DD8451CCEFB0F0020F95B /* splash.jpg */; };
+		D60DD8481CCEFC230020F95B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D60DD8471CCEFC230020F95B /* icon.png */; };
+		D60DD84A1CCEFE6B0020F95B /* hbxy.png in Resources */ = {isa = PBXBuildFile; fileRef = D60DD8491CCEFE6B0020F95B /* hbxy.png */; };
 		D646E12A1CC882AA001BF6D7 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D646E1291CC882AA001BF6D7 /* DetailTableViewController.m */; };
 		D646E12C1CC88593001BF6D7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D646E12B1CC88593001BF6D7 /* Storyboard.storyboard */; };
 		D670275E1CC65E44008270E6 /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D670275D1CC65E44008270E6 /* nav_menu_icon@2x.png */; };
@@ -225,6 +228,9 @@
 		AD210D211A24A06C007EB02E /* TFHppleStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleStringTest.m; sourceTree = "<group>"; };
 		C27882411CC4749B008FC8BB /* HBHttpNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpNetWorking.h; sourceTree = "<group>"; };
 		C27882421CC4749B008FC8BB /* HBHttpNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBHttpNetWorking.m; sourceTree = "<group>"; };
+		D60DD8451CCEFB0F0020F95B /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		D60DD8471CCEFC230020F95B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		D60DD8491CCEFE6B0020F95B /* hbxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hbxy.png; sourceTree = "<group>"; };
 		D646E1281CC882AA001BF6D7 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
 		D646E1291CC882AA001BF6D7 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		D646E12B1CC88593001BF6D7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -571,7 +577,10 @@
 				AD210CEC1A249B34007EB02E /* ViewController.h */,
 				AD210CED1A249B34007EB02E /* ViewController.m */,
 				AD210CEF1A249B34007EB02E /* Main.storyboard */,
+				D60DD8491CCEFE6B0020F95B /* hbxy.png */,
 				D6EE46131CC7BB7800CB554B /* 1.jpg */,
+				D60DD8451CCEFB0F0020F95B /* splash.jpg */,
+				D60DD8471CCEFC230020F95B /* icon.png */,
 				AD210CF21A249B34007EB02E /* Images.xcassets */,
 				AD210CF41A249B34007EB02E /* LaunchScreen.xib */,
 				AD210CE51A249B34007EB02E /* Supporting Files */,
@@ -735,6 +744,8 @@
 				04D028AB1CC626A00085C821 /* NotificationViewController.xib in Resources */,
 				04D028961CC624A30085C821 /* NewsDetailViewController.xib in Resources */,
 				AD210CF11A249B34007EB02E /* Main.storyboard in Resources */,
+				D60DD8461CCEFB0F0020F95B /* splash.jpg in Resources */,
+				D60DD8481CCEFC230020F95B /* icon.png in Resources */,
 				04D028831CC622BB0085C821 /* CollectionDetailView.xib in Resources */,
 				04D028C81CC632670085C821 /* StudentViewController.xib in Resources */,
 				04D0288E1CC624710085C821 /* NewsViewController.xib in Resources */,
@@ -747,6 +758,7 @@
 				D670275E1CC65E44008270E6 /* nav_menu_icon@2x.png in Resources */,
 				D6EE46171CC7C06200CB554B /* HomePageViewController.xib in Resources */,
 				04D028F11CC647520085C821 /* EducationDetailView.xib in Resources */,
+				D60DD84A1CCEFE6B0020F95B /* hbxy.png in Resources */,
 				04D028D71CC633070085C821 /* StudentDetailView.xib in Resources */,
 				04D028B51CC627C30085C821 /* NotificationCell.xib in Resources */,
 				AD210CF31A249B34007EB02E /* Images.xcassets in Resources */,
